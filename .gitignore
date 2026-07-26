@@ -1,37 +1,36 @@
-# --- Python ---
+# Python
 __pycache__/
 *.py[cod]
 *.egg-info/
-.eggs/
 build/
 dist/
 
-# --- Virtual environment ---
+# Virtual environment
 venv/
 .venv/
 env/
 
-# --- Jupyter ---
+# Jupyter
 .ipynb_checkpoints/
 
-# --- Data (raw/processed data should not live in git history) ---
+# Data (never commit raw/processed data files themselves)
 data/raw/*
 !data/raw/.gitkeep
 data/processed/*
 !data/processed/.gitkeep
 
-# --- Trained models (large binary artifacts) ---
+# Trained models
 models/*
 !models/.gitkeep
 
-# --- Environment / secrets ---
+# Generated reports
+reports/*
+!reports/.gitkeep
+
+# Secrets
 .env
 
-# --- OS / editor junk ---
+# OS / editor
 .DS_Store
 .vscode/
 .idea/
-
-# --- Reports (generated, not hand-authored) ---
-reports/*
-!reports/.gitkeep

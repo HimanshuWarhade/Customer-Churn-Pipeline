@@ -1,29 +1,29 @@
-# Customer Churn Pipeline
+# Customer Churn Capstone
 
-## Problem Statement
-A financial services company (Personal Loans, Credit Cards, Savings Accounts,
-Insurance, Investment Services) wants to identify customers who are likely to
-churn (stop using services / not renew products), so the retention team can
-proactively target them with offers and campaigns before they leave.
+Predicts which bank customers are likely to churn (leave), so the
+retention team can target them with offers before they go.
 
-This project builds an end-to-end, production-style machine learning pipeline
-that predicts the **probability of churn** for each customer.
-
-## Project Status
-🚧 Phase 1: Project setup and planning — in progress.
-
-## Project Structure
+## Structure
 ```
-Customer-Churn-Pipeline/
+Customer-Churn-Capstone/
 ├── data/
-│   ├── raw/            # Immutable original data (never edited directly)
-│   └── processed/       # Cleaned / feature-engineered data
-├── notebooks/           # Exploratory analysis (not production code)
-├── src/                 # Reusable, production-quality Python modules
-├── models/              # Serialized trained models (.pkl / .joblib)
-├── reports/             # EDA reports, evaluation metrics, figures
-├── app/                 # Streamlit / FastAPI deployment code
-├── tests/                # Unit tests for src/ modules
+│   ├── raw/           # original CSV, never edited
+│   └── processed/     # cleaned/engineered data
+├── notebooks/
+│   ├── 01_data_understanding.ipynb
+│   ├── 02_eda.ipynb
+│   ├── 03_feature_engineering.ipynb
+│   └── 04_model_training.ipynb
+├── src/
+│   ├── preprocessing.py
+│   ├── features.py
+│   ├── train.py
+│   ├── evaluate.py
+│   └── predict.py
+├── models/            # saved trained models
+├── reports/           # EDA_Report.pdf, Model_Report.pdf (generated later)
+├── app/
+│   └── streamlit_app.py
 ├── requirements.txt
 ├── .gitignore
 └── README.md
@@ -32,17 +32,16 @@ Customer-Churn-Pipeline/
 ## Setup
 ```bash
 python -m venv venv
-source venv/bin/activate      # Windows: venv\Scripts\activate
+source venv/bin/activate   # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## Roadmap
-- [x] Phase 1 — Planning, environment, repo setup
-- [ ] Phase 2 — Data collection & validation
-- [ ] Phase 3 — Exploratory Data Analysis
-- [ ] Phase 4 — Data cleaning & feature engineering
-- [ ] Phase 5 — Feature selection & preprocessing pipeline
-- [ ] Phase 6 — Model training & hyperparameter tuning
-- [ ] Phase 7 — Model evaluation & comparison
-- [ ] Phase 8 — Serialization & prediction pipeline
-- [ ] Phase 9 — Deployment (Streamlit + FastAPI)
+## Progress
+- [x] Step 1 — Project structure, environment, dataset in place
+- [ ] Step 2 — Data understanding & validation (notebook 01)
+- [ ] Step 3 — EDA (notebook 02)
+- [ ] Step 4 — Feature engineering (notebook 03)
+- [ ] Step 5 — Model training & tuning (notebook 04, src/train.py)
+- [ ] Step 6 — Evaluation & comparison (src/evaluate.py)
+- [ ] Step 7 — Prediction pipeline (src/predict.py)
+- [ ] Step 8 — Streamlit app (app/streamlit_app.py)
