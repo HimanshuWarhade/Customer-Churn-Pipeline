@@ -1,0 +1,19 @@
+Model Evaluation Report
+=======================
+
+Accuracy: 0.8270
+Precision: 0.5594
+Recall: 0.7157
+F1: 0.6280
+ROC-AUC: 0.8720
+
+Classification Report
+----------------------
+              precision    recall  f1-score   support
+
+      Stayed       0.92      0.86      0.89      1592
+     Churned       0.56      0.72      0.63       408
+
+    accuracy                           0.83      2000
+   macro avg       0.74      0.79      0.76      2000
+weighted avg       0.85      0.83      0.83      2000

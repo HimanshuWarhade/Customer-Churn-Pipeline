@@ -23,9 +23,9 @@ data/processed/*
 models/*
 !models/.gitkeep
 
-# Generated reports
-reports/*
-!reports/.gitkeep
+# Generated reports -- these ARE committed (charts, data dictionary,
+# model report are real deliverables the README links to). Nothing to
+# ignore here on purpose.
 
 # Secrets
 .env
