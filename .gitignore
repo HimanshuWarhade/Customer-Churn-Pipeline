@@ -1,36 +1,36 @@
-# Python
-__pycache__/
-*.py[cod]
-*.egg-info/
-build/
-dist/
+# # Python
+# __pycache__/
+# *.py[cod]
+# *.egg-info/
+# build/
+# dist/
 
-# Virtual environment
-venv/
-.venv/
-env/
+# # Virtual environment
+# venv/
+# .venv/
+# env/
 
-# Jupyter
-.ipynb_checkpoints/
+# # Jupyter
+# .ipynb_checkpoints/
 
-# Data (never commit raw/processed data files themselves)
-data/raw/*
-!data/raw/.gitkeep
-data/processed/*
-!data/processed/.gitkeep
+# # Data (never commit raw/processed data files themselves)
+# data/raw/*
+# !data/raw/.gitkeep
+# data/processed/*
+# !data/processed/.gitkeep
 
-# Trained models
-models/*
-!models/.gitkeep
+# # Trained models
+# models/*
+# !models/.gitkeep
 
-# Generated reports -- these ARE committed (charts, data dictionary,
-# model report are real deliverables the README links to). Nothing to
-# ignore here on purpose.
+# # Generated reports -- these ARE committed (charts, data dictionary,
+# # model report are real deliverables the README links to). Nothing to
+# # ignore here on purpose.
 
-# Secrets
-.env
+# # Secrets
+# .env
 
-# OS / editor
-.DS_Store
-.vscode/
-.idea/
+# # OS / editor
+# .DS_Store
+# .vscode/
+# .idea/
