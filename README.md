@@ -9,7 +9,7 @@ engineering, model comparison, hyperparameter tuning, unit tests, and a
 deployed interactive dashboard.
 
 ---
-🚀 [Live Demo](https://your-demo-link.com)
+🚀 [Live Demo](https://customer-churn-webapp.streamlit.app/)
 ---
 
 ## Results Summary
